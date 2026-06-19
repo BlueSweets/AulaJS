@@ -8,7 +8,7 @@
     <meta name="description" content="Este é uma site modelo">
     <meta name="keywords" content="Sites, Web, Desenvolvimento Back-End">
     <meta name="author" content="Maria Eduarda M. demelogabrielm@gmail.com">
-    <title>AULA 02 - Desafio 02</title> <!-- Icone do site -->
+    <title>AULA 03 - Exercicio 01</title> <!-- Icone do site -->
     <link rel="icon" type="image/jpg" href="../favicon.jpg">
     <!-- <style>
         p{
@@ -30,52 +30,68 @@
             padding: 0.5%;
             border: 5px solid rgb(216, 49, 133);
         }
-        img{
-            width: 0%;
+        h2{
+
         }
     </style> -->
 </head>
 
 <body>
-    <h1><mark> DESAFIO 02 -</mark> MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JAVASCRIPT</h1>
+    <h1><mark> EXERCÍCIO 01 - </mark> TROCANDO IMAGENS DO HTML ATRAVÉS DO JAVASCRIPT</h1>
     <hr>
-    
+
     <div class="img">
-        <h2>CONHEÇA O VEIGH</h2>
-        <hr>        
-        <img src="img/evom.jpg" alt="Veigh - EVOM" width="100" title="Veigh1">    
+        <h2>CONHEÇA O Thiago Veigh da Silva</h2>
+        <hr>
+        <img src="img/dog.jpg" alt="Veigh - EVOM" width="350px" title="Veigh1">
+        <br>
+
+        <button onclick="IMGDOG()">Pessoa Normal</button>
+        <button onclick="IMGSHOW()">Veigh no Show</button>
+
     </div>
 
     <script>
         const tags_h2 = document.getElementsByTagName('h2')
+        const tags_img = document.getElementsByTagName('img');
+
         console.log(tags_h2)
         let tag_h2_1 = tags_h2[0];
         console.log(tag_h2_1);
-        tag_h2_1.style.color="black"
-        tag_h2_1.style.textAlign="center"
+        tag_h2_1.style.color = "black"
+        tag_h2_1.style.textAlign = "center"
 
         const tags_body = document.getElementsByTagName('body');
         console.log(tags_body)
         let tag_body = tags_body[0];
         console.log(tag_body);
-        tag_body.style.backgroundColor=" oklab(44.086999999999996% 0.14989 0.08602)"
-        tag_body.style.color="black"
-        
+        tag_body.style.backgroundColor = " oklab(44.086999999999996% 0.14989 0.08602)"
+        tag_body.style.color = "black"
+
         const tags_div = document.getElementsByTagName('div');
         console.log(tags_div)
         let tag_div = tags_div[0];
         console.log(tag_div);
-        tag_div.style.backgroundColor="rgb(156, 15, 5)"
-        tag_div.style.border="8px solid hsl(4, 96%, 20%)" 
-        tag_div.style.padding="0.5"
-        tag_div.style.display="block"
-        tag_div.style.alignItems="center"
+        tag_div.style.backgroundColor = "rgb(156, 15, 5)"
+        tag_div.style.border = "8px solid hsl(4, 96%, 20%)"
+        tag_div.style.padding = "0.5"
+        tag_div.style.display = "display: inline-block"
+        tag_div.style.alignItems = "desplay"
+        function IMGDOG() {
+            let tag_img_1 = tags_img[0];               
+                tag_img_1.src = "img/dog.jpg";
+                tag_img_1.title = "Veigh1"          
 
-        const tags_img = document.getElementsByTagName('img');
-        let tag_img_1 = tags_img[0];
+        }
 
-        tag_img_1.src="img/veigh.png";
-        tag_img_1.title="Veigh2"
+        function IMGSHOW() {
+            let tag_img_1 = tags_img[0];               
+                tag_img_1.src = "img/show.jpg";
+                tag_img_1.title = "Veigh2"          
+
+        }
+
+
 
 
 

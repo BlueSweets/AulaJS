@@ -18,6 +18,9 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: large;
         }
+        body{
+            background: linear-gradient(to right, rgb(167, 9, 9) , rgb(109, 12, 12), rgb(0, 0, 0));
+        }
     </style> -->
 </head>
 
@@ -27,10 +30,19 @@
     <div>
         <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
         <hr>
-        <h3>Aprender é Muito Legal</h3>
+        <h2>Aprender é Muito Legal</h2>
         <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar</p>
     </div>
+
     <script>
+        const tags_body = document.getElementsByTagName('body')
+        console.log(tags_body);
+        let tag_body = tags_body[0];
+        console.log(tag_body);
+        tag_body.style.background="linear-gradient(to right, rgb(167, 9, 9) , rgb(109, 12, 12), rgb(0, 0, 0))"
+        tag_body.style.color="white"
+        tag_body.style.textAlign="center"
+
         const tags_p = document.getElementsByTagName('p')
         console.log(tags_p);
         let tag_p_1 = tags_p[0];
@@ -46,14 +58,13 @@
         tag_p_2.style.textAlign="center"
         tag_p_2.style.fontSize="large"
 
-        const tags_h3 = document.getElementsByTagName('h3')
-        console.log(tags_h3)
-        let tag_h3_1 = tags_h3[0];
-        console.log(tag_h3_1);
-        tag_h3_1.style.background="red"
-        tag_h3_1.style.color="white"
-        tag_h3_1.style.textAlign="center"
-        tag_h3_1.style.fontSize="large"
+        const tags_h2 = document.getElementsByTagName('h3')
+        console.log(tags_h2)
+        let tag_h2_1 = tags_h2[0];
+        console.log(tag_h2_1);
+        tag_h2_1.style.color="white"
+        tag_h2_1.style.textAlign="center"
+        tag_h2_1.style.fontSize="large"
     </script>
 </body>
 

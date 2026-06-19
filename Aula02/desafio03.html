@@ -43,7 +43,7 @@
     <div class="img">
         <h2>CONHEÇA O VEIGH</h2>
         <hr>        
-        <img src="img/evom.jpg" alt="Veigh - EVOM" width="100%" title="Veigh1">    
+        <img src="img/evom.jpg" alt="Veigh - EVOM" width="500px" title="Veigh1">    
     </div>
     <button onclick="TrocarIMG()">Trocar Imagem</button>
     <script>
@@ -70,12 +70,15 @@
         tag_div.style.padding="0.5"
         tag_div.style.display="block"
         tag_div.style.alignItems="center"
+        
+        function TrocarIMG(){
+            const tags_img = document.getElementsByTagName('img');
+            let tag_img_1 = tags_img[0];
 
-        const tags_img = document.getElementsByTagName('img');
-        let tag_img_1 = tags_img[0];
+            tag_img_1.src="img/veigh.png";
+            tag_img_1.title="Veigh2"
+        }
 
-        tag_img_1.src="img/veigh.png";
-        tag_img_1.title="Veigh2"
 
 
 
